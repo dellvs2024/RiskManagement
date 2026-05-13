@@ -1,0 +1,7 @@
+POST http://localhost:4004/odata/v4/service/risk/changeOwner
+Content-Type: application/json
+
+{
+    "ID":"20466922-7d57-4e76-b14c-e53fd97dcb09",
+    "owner":"Vivek"
+}
