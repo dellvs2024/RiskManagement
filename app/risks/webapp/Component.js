@@ -5,7 +5,6 @@ sap.ui.define(
 
         return Component.extend("riskmanagement.risks.Component", {
             metadata: {
-                
                 manifest: "json"
             }
         });
