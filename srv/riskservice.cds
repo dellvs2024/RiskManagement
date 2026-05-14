@@ -2,16 +2,16 @@ using { riskmanagement as rm } from '../db/schema';
 @path: 'service/risk'
 service RiskService {
 entity Risks 
-// @(restrict : [
-// {
-// grant : ['READ'],
-// to : ['RiskViewer']
-// },
-// {
-// grant : ['*'],
-// to : ['RiskManager']
-// }
-// ]) 
+@(restrict : [
+{
+grant : ['READ'],
+to : ['RiskViewer']
+},
+{
+grant : ['*'],
+to : ['RiskManager']
+}
+]) 
 as projection on rm.Risks;
 annotate Risks with @odata.draft.enabled;
 entity Mitigations as projection on rm.Mitigations;
